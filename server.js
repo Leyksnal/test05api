@@ -5,7 +5,7 @@ const express = require('express')
 // import the writeFile module
 const {writeFile} = require('./module')
 // init a port to map the server
-const port = 2020
+const port = process.env.PORT || 2020
 
 // the abstraction of the server
 const app = express()
